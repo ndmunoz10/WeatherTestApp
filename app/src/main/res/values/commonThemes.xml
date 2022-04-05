@@ -34,9 +34,18 @@
         <item name="android:fontFamily">@font/open_sans_semibold</item>
     </style>
 
+    <style name="AccentedText">
+        <item name="android:textSize">@dimen/accented_size</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
     <!-- Specific Themes -->
 
     <style name="HeaderText.Light">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AccentedText.Light">
         <item name="android:textColor">@color/white</item>
     </style>
 

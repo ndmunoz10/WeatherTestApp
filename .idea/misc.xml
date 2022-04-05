@@ -4,13 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.13385416666666666" />
+        <entry key="app/src/main/res/drawable/bkg_gray_card_16r.xml" value="0.1375" />
         <entry key="app/src/main/res/drawable/bkg_light_card_16r.xml" value="0.1375" />
+        <entry key="app/src/main/res/drawable/ic_splash_icon.xml" value="0.1375" />
         <entry key="app/src/main/res/font/.xml" value="0.25462962962962965" />
         <entry key="app/src/main/res/font/open_sans_bold.xml" value="0.25462962962962965" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.21388888888888888" />
         <entry key="app/src/main/res/layout/activity_location_detail.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22395833333333334" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/location_item.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/weather_preview_item.xml" value="0.23802083333333332" />
       </map>
     </option>
   </component>

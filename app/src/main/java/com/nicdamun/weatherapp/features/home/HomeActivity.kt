@@ -8,6 +8,7 @@ import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import com.nicdamun.common.models.LocationModel
+import com.nicdamun.weatherapp.R
 import com.nicdamun.weatherapp.databinding.ActivityHomeBinding
 import com.nicdamun.weatherapp.extensions.doAfterTextChangedDelayed
 import com.nicdamun.weatherapp.features.locationDetail.LocationDetailActivity
@@ -31,6 +32,15 @@ class HomeActivity : AppCompatActivity() {
         requestForLocationPermission()
     }
 
+    private fun handleInitialState() {
+        with(binding) {
+            groupNothingFound.isVisible = true
+            pbLoading.isVisible = false
+            rvLocationList.isVisible = false
+            tvNothingFound.text = getString(R.string.initial_state_description)
+        }
+    }
+
     private fun handleLoadingState() {
         with(binding) {
             groupNothingFound.isVisible = false
@@ -44,6 +54,7 @@ class HomeActivity : AppCompatActivity() {
             groupNothingFound.isVisible = true
             pbLoading.isVisible = false
             rvLocationList.isVisible = false
+            tvNothingFound.text = getString(R.string.nothing_found_here)
         }
     }
 
@@ -90,6 +101,7 @@ class HomeActivity : AppCompatActivity() {
     private fun setViewModelObservers() {
         viewModel.state.observe(this) { state: HomeViewState ->
             when (state) {
+                is HomeViewState.InitialState -> handleInitialState()
                 is HomeViewState.Loading -> handleLoadingState()
                 is HomeViewState.OnLocationsFailed -> handleNothingFoundState()
                 is HomeViewState.OnLocationsLoaded -> handleOnLocationsFoundState(state.locations)

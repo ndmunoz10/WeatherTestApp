@@ -1,4 +1,4 @@
-package com.nicdamun.weatherapp.base
+package com.nicdamun.weatherapp.common
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

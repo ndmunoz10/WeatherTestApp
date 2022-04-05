@@ -12,6 +12,6 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
         <!-- Customize your theme here. -->
-        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowBackground">#038F8A</item>
     </style>
 </resources>

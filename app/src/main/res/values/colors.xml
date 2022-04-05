@@ -15,6 +15,16 @@
     <!-- Blue Palette -->
     <color name="blue">#3232FF</color>
 
+    <!-- Weather Palette -->
+    <color name="clearSky">#87cbde</color>
+    <color name="hailstorm">#919bb4</color>
+    <color name="heavyClouds">#465b70</color>
+    <color name="lightClouds">#d0cccc</color>
+    <color name="lightStorm">#f9eea9</color>
+    <color name="rain">#C4D3DF</color>
+    <color name="snow">#FFFAFA</color>
+    <color name="sleet">#9d9ea4</color>
+
     <!-- White Palette -->
     <color name="white">#FFFFFFFF</color>
     <color name="white_70">#B3FFFFFF</color>

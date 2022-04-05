@@ -2,6 +2,7 @@ package com.nicdamun.domain.di
 
 import com.nicdamun.domain.useCases.CalculateDistanceUseCase
 import com.nicdamun.domain.useCases.GetCurrentLocationUseCase
+import com.nicdamun.domain.useCases.GetLocationDetailsUseCase
 import com.nicdamun.domain.useCases.GetLocationsByNameUseCase
 import com.nicdamun.repository.ILocationRepository
 import dagger.Module
@@ -23,6 +24,13 @@ object UseCaseModule {
         locationRepository: ILocationRepository
     ): GetCurrentLocationUseCase {
         return GetCurrentLocationUseCase(locationRepository)
+    }
+
+    @Provides
+    fun providesGetLocationDetailsUseCase(
+        locationRepository: ILocationRepository
+    ): GetLocationDetailsUseCase {
+        return GetLocationDetailsUseCase(locationRepository)
     }
 
     @Provides

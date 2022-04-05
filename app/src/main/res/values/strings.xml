@@ -9,4 +9,5 @@
     <string name="home_title">Weather App</string>
     <string name="home_search_bar_hint">Type a location…</string>
     <string name="nothing_found_here">Nothing found here, please try another location</string>
+    <string name="initial_state_description">&#129398; Isn\'t it cold? Type a location to find out</string>
 </resources>

@@ -15,7 +15,7 @@ class HomeViewModel @Inject constructor(
     private val getLocationsByNameUseCase: GetLocationsByNameUseCase
 ) : ViewModel() {
 
-    private val _state = MutableLiveData<HomeViewState>(HomeViewState.OnNoLocations)
+    private val _state = MutableLiveData<HomeViewState>(HomeViewState.InitialState)
     val state: LiveData<HomeViewState> = _state
 
     fun getLocationsByName(locationName: String) {
