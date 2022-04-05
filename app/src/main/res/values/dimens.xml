@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Font Sizes -->
+    <dimen name="header_size">26sp</dimen>
+    <dimen name="body_size">22sp</dimen>
+    <dimen name="item_header_size">22sp</dimen>
+    <dimen name="item_body_size">20sp</dimen>
+    <dimen name="caption_size">16sp</dimen>
+
+    <!-- Screen Margins -->
+    <dimen name="screen_margin">16dp</dimen>
+    <dimen name="normal_margin">8dp</dimen>
+    <dimen name="big_margin">16dp</dimen>
+</resources>
