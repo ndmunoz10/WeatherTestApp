@@ -28,8 +28,4 @@ class HomeViewModel @Inject constructor(
         }
     }
 
-    fun onLocationSelected(locationModel: LocationModel) {
-
-    }
-
 }
