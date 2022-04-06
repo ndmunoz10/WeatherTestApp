@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- Black Palette -->
+    <color name="black">#FF000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_18">#2E000000</color>
+
+    <!-- Blue Palette -->
+    <color name="blue">#3232FF</color>
+
+    <!-- Weather Palette -->
+    <color name="clearSky">#87cbde</color>
+    <color name="hailstorm">#919bb4</color>
+    <color name="heavyClouds">#465b70</color>
+    <color name="lightClouds">#d0cccc</color>
+    <color name="lightStorm">#f9eea9</color>
+    <color name="rain">#C4D3DF</color>
+    <color name="snow">#FFFAFA</color>
+    <color name="sleet">#9d9ea4</color>
+
+    <!-- White Palette -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_18">#2EFFFFFF</color>
+
+    <!-- Yellow Palette -->
+    <color name="yellow">#00464d</color>
+    <color name="yellow_70">#B3ffff00</color>
+    <color name="yellow_20">#33ffff00</color>
+    <color name="yellow_18">#2Effff00</color>
+</resources>

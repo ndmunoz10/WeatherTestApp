@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="@dimen/big_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDetailsTitle"
+            style="@style/HeaderText.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Hamburg"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDetailsTemp"
+            style="@style/AccentedText.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            app:layout_constraintTop_toBottomOf="@id/tvDetailsTitle"
+            app:layout_constraintStart_toStartOf="@id/tvDetailsTitle"
+            app:layout_constraintEnd_toEndOf="@id/tvDetailsTitle"
+            tools:text="15"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lvDetailsTempAnim"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:lottie_rawRes="@raw/light_clouds"
+            app:layout_constraintTop_toBottomOf="@id/tvDetailsTemp"
+            app:layout_constraintStart_toStartOf="@id/tvDetailsTemp"
+            app:layout_constraintEnd_toEndOf="@id/tvDetailsTemp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDetailsNextDaysList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bkg_light_card_16r"
+            android:orientation="vertical"
+            android:nestedScrollingEnabled="false"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintWidth_percent="0.8"
+            app:layout_constraintTop_toBottomOf="@id/lvDetailsTempAnim"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:listitem="@layout/weather_preview_item"
+            tools:visibility="visible"/>
+
+        <ProgressBar
+            android:id="@+id/pbDetailsLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:progressBackgroundTint="@color/white"
+            android:indeterminateTint="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lvDetailsNothingFound"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            app:lottie_rawRes="@raw/nothing_found_anim"
+            app:lottie_autoPlay="true"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvDetailsNothingFound"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDetailsNothingFound"
+            style="@style/BodyText.Light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:text="@string/nothing_found_here"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/lvDetailsNothingFound"
+            app:layout_constraintStart_toStartOf="@id/lvDetailsNothingFound"
+            app:layout_constraintEnd_toEndOf="@id/lvDetailsNothingFound"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupDetailsNothingFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="lvDetailsNothingFound,tvDetailsNothingFound"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
